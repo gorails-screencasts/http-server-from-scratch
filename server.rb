@@ -23,6 +23,12 @@ SingleFile.routes.draw do
 end
 
 APP = SingleFile
+
+# Or use the Rack Lobster example app
+# require "rack"
+# require "rack/lobster"
+# APP = Rack::Lobster.new
+
 port = ENV.fetch("PORT", 2000).to_i
 server = TCPServer.new port
 
